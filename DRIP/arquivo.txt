@@ -1,0 +1,19 @@
+13
+-13
+13.13
+bruno + melissa
+joao * pedro
+a - b
+a / b
+a % b
+a || b
+a | b
+a & b
+a && b
+a ^ b
+a > b
+a < b
+a >= b
+a <= b
+a == b
+a != b

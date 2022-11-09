@@ -1,0 +1,42 @@
+ Operadores:
+ < SOMA : "+" >
+ < SUBTRACAO : "-" >
+ < MULTIPLICADOR : "*" >
+ < DIVISOR : "/" >
+ < ATRIBUICAO : "=" >
+ < AND : "&&" >
+ < OR : "||" >
+ < NOT : "!" >
+ < MAIOR : ">" >
+ < MENOR : "<" >
+ < MAIOR_IGUAL : ">=" >
+ < MENOR_IGUAL : "<=" >
+ < IGUAL : "==" >
+ < NEGACAO : "!=" >
+ Palavras reservadas:
+ < INT : "int" >
+ < IF : "if" >
+ < ELSE : "else" >
+ < WHILE : "while" >
+ < RETURN : "return" >
+ Símbolos especiais:
+ < A_PARENTESES : "(" >
+ < F_PARENTESES : ")" >
+ < A_COLCHETES : "[" >
+ < F_COLCHETES : "]" >
+ < A_CHAVES : "{" >
+ < F_CHAVES : "}" >
+ < PONT_VIRG : ";" >
+ < VIRGULA : "," >
+
+ Identificadores:
+ <ID: <LETRA> (<LETRA> | <DIGITO> ) * >
+ <LETRA: ["$","A"-"Z","_","a"-"z"]>
+ <NUM: ((<DIGITO>)+ | (<DIGITO>)+"."(<DIGITO>)*) >
+ <DIGITO: ["0"-"9"]>
+ Tokens para erros
+ < INVALID_LEXICAL: ( ~["a"-"z" , "A"-"Z", "0"-"9", "\"", "(", ")", "[", "]", "{", "}",
+";", ":", ",", ">", "<", "=", "!", "+", "-", "*", "/", " ", "\t", "\n", "\r"] )+ >
+ <INVALID_CARAC>: ((< LETRA >) | (< DIGITO >))* (<INVALID_LEXICAL>)+
+((< LETRA >) | (< DIGITO >))*
+ <INVALID_CARAC>: (< DIGITO >)+(< LETRA >)+
